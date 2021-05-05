@@ -1,0 +1,19 @@
+.app-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: var(--max_width);
+    margin-right: auto;
+    margin-left: auto;
+
+    height: 100%;
+
+    &__author,
+    &__version {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        font-size: 60%;
+    }
+}

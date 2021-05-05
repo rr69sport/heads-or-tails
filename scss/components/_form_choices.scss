@@ -1,0 +1,43 @@
+.form-choices {
+    padding: $unit;
+
+    background-color: lighten($bg_color, $tone);
+
+    &__fieldset {
+        margin: 0;
+        padding: 0;
+
+        border: none;
+
+        &--buttons {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            gap: $unit;
+
+            padding-top: $unit;
+
+            border-top: 1px solid rgba($bg_color, $alpha);
+        }
+    }
+
+    &__option-label,
+    &__option-input{
+        display: block;
+        padding: $unit  / 2 0;
+    }
+
+    &__option-input{
+        padding-left: $unit / 2;
+        margin: $unit  / 2 0;
+
+        width: 100%;
+
+        font-size: $font_size;
+
+        border: none;
+
+        &:focus {
+            outline: 3px solid $main_color;
+        }
+    }
+}

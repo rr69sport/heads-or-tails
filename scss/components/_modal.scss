@@ -1,0 +1,35 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    padding: 0;
+
+    background-color: darken(rgba($bg_color, $alpha + .20), $tone);
+
+    border: none;
+
+    z-index: $z_index_modal;
+
+    &::before {
+        content: url('../assets/icons/times.svg');
+        position: absolute;
+        top: $unit - .25em;
+        right: $unit;
+        width: $unit / 1.25;
+        height: $unit / 1.25;
+        cursor: pointer;
+    }
+
+    &__info {
+        max-width: var(--max_width);
+        margin-right: auto;
+        margin-left: auto;
+
+        padding: $unit;
+
+        color: $text_color;
+    }
+}

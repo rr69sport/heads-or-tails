@@ -1,0 +1,38 @@
+.faq {
+    margin-top: $unit;
+    padding: 0; // Padding by default
+    
+    &__title {
+        margin-top: 0;
+        font-size: 1.75rem;
+    }
+    &__question {
+        margin-bottom: $unit / 2;
+        background-color: lighten($bg_color, $tone);
+    }
+    &__summary {
+        padding: $unit / 2 $unit;
+        border-bottom: 1px solid lighten($bg_color, $tone);
+        &:hover {
+            cursor: pointer;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:hover,
+        &:focus {
+            background-color: $main_color;
+        }
+    }
+    &__answer {
+        margin-top: 0;
+        margin-bottom: $unit / 2;
+        padding: $unit / 2;
+        background-color: rgba($bg_color, $alpha);
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-left: $unit;
+        padding-right: $unit;
+    }
+}

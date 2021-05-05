@@ -1,0 +1,48 @@
+.settings {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+    &__toggle {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        display: block;
+        width: 24px;
+        height: 24px;
+
+        padding: 0;
+
+        background-color: transparent;
+
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    &__cog {
+        height: 100%;
+
+        fill: $text_color;
+
+        transition-timing-function: transform, fill;
+        transition-duration: $timing_duration;
+    }
+    &:hover &__cog {
+            fill: $main_color;
+            transform: rotate(90deg);
+    }
+
+    &__list {
+        position: absolute;
+        top: var(--top);
+        right: 0;
+
+        transform: scale(0);
+
+        &--active {
+            transform: scale(1);
+        }
+    }
+}

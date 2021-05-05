@@ -1,0 +1,37 @@
+.options {
+    position: relative;
+
+    width: calc(var(--max_width) / 3);
+
+    background-color: lighten($bg_color, $tone);
+    box-shadow: 0 0 15px 5px $bg_color;
+
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -7px;
+        right: 5px;
+        width: $unit / 1.75;
+        height: $unit / 1.75;
+        background-color: inherit;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
+
+    &__option {
+        margin: $unit / 8;
+        padding: $unit / 2;
+        
+        font-size: $font_size;
+        text-transform: uppercase;
+        background-color: rgba($bg_color, $alpha / 2);
+
+        transition: background-color $timing_duration;
+
+        &:hover {
+            background-color: rgba($bg_color, $alpha);
+        }
+    }
+}

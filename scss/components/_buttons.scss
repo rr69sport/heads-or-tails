@@ -1,0 +1,36 @@
+.button {
+    display: block;
+
+    padding: $unit / 2;
+
+    font-size: $font_size;
+    color: $text_color;
+    background-color: $main_color;
+
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($main_color, $tone);
+        transition: background-color $timing_duration;
+    }
+    &:focus {
+        outline: 2px solid $text_color;
+    }
+
+    &--clear {
+        display: grid;
+        place-items: center;
+        
+        background-color: rgba($bg_color, $alpha);
+        transition: background-color $timing_duration;
+        &:hover {
+            background-color: darken(rgba($bg_color, $alpha), $tone / 4);
+        }
+    }
+
+    &:disabled {
+        background-color: gray;
+        cursor: not-allowed;
+    }
+}

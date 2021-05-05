@@ -1,0 +1,10 @@
+.winning-option {
+    &__title {
+        font-size: 1.75rem;
+    }
+    &__text {
+        padding: $unit;
+        
+        background-color: lighten($bg_color, $tone);
+    }
+}

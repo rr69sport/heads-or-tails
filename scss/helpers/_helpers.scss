@@ -1,0 +1,25 @@
+// Crea una capa para que si se clickea fuera de las opciones, estás se cierren
+// Se evita el uso de muchos "parentElements" en JavaScript
+.overlay {
+    position: relative;
+
+    &--full-screen::before,
+    &--equal-parent::before {
+        content: '';
+        top: 0;
+        left: 0;
+        background-color: transparent;
+    }
+    &--full-screen::before {
+        filter: blur(5px);
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+    }
+    &--equal-parent::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+}

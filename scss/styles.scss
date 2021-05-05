@@ -1,0 +1,21 @@
+@import "./config/config.scss";
+@import "./config/reset.scss";
+
+@import "./layout/body.scss";
+@import "./layout/main_header.scss";
+@import "./layout/main_content.scss";
+@import "./layout/main_footer.scss";
+
+
+@import "./components/main_title.scss";
+@import "./components/choices.scss";
+@import "./components/modal.scss";
+@import "./components/options.scss";
+@import "./components/form_choices.scss";
+@import "./components/faq.scss";
+@import "./components/winning_option.scss";
+@import "./components/settings.scss";
+@import "./components/buttons.scss";
+@import "./components/app_info.scss";
+
+@import "./helpers/helpers.scss";
