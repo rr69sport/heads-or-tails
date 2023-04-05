@@ -24,7 +24,7 @@ formChoices.addEventListener('submit', (e) => {
     }
 })
 formChoices.addEventListener('reset', () => {
-    // Para que no interrumpa el setTimeout
+    // Para que no interrumpa el setTimeout "./functions/show_winning_option.js"
     if (formChoices.option_a.value.trim().length === 0 ||
         formChoices.option_b.value.trim().length === 0) return
     resetText()
